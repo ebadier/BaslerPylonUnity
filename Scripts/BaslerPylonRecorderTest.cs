@@ -23,8 +23,6 @@ public class BaslerPylonRecorderTest : MonoBehaviour
 {
     private const string VIDEO_FILENAME = "Video.mp4";
 
-    [Range(30f, 100f)]
-    public float recordingFrameRate = 60f;
     [Range(1, 100)]
     public uint recordingQuality = 90u;
     public string[] camerasSN = { "24551463", "24794830" };
@@ -56,7 +54,7 @@ public class BaslerPylonRecorderTest : MonoBehaviour
                 {
                     string filename = string.Format("../{0}_{1}", camSN, VIDEO_FILENAME);
                     string videoFilePath = Path.Combine(Application.dataPath, filename);
-                    BaslerPylonUnity.PrepareRecording(camSN, videoFilePath, recordingFrameRate, recordingQuality);
+                    BaslerPylonUnity.PrepareRecording(camSN, videoFilePath, recordingQuality);
                 }
                 BaslerPylonUnity.StartRecording();
                 Debug.Log("[BaslerPylonRecorderTest] Recording Started.");

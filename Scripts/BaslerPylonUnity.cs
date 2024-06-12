@@ -29,7 +29,7 @@ public static class BaslerPylonUnity
 
     [DllImport(DLL_NAME)]
     // Must be called for each camera, before any call to StartRecording()
-    public static extern void PrepareRecording(string pDeviceSN, string pVideoFilePath, double pFramesPerSecond = 60.0, uint pQuality = 90);
+    public static extern void PrepareRecording(string pDeviceSN, string pVideoFilePath, uint pQuality = 90);
 
     [DllImport(DLL_NAME)]
     // Recording of video happens in a thread and will never block the calling thread.

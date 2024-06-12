@@ -9,7 +9,6 @@
 #### 2. Close the [PylonViewer software](https://www.baslerweb.com/en/software/pylon/pylon-viewer/), or at least close the camera devices inside it, because only one program can access the cameras at a time
 #### 3. Open the BaslerPylonRecorderTest scene in Unity, and in BaslerPylonRecorderTest's inspector:  
 - set your cameras serial numbers
-- set a **Recording FrameRate** matching the **Camera's Acquisition FrameRate** to generate videos with a normal playback speed
 - you can also set the video encoding quality
 #### 4. Press Play
 
